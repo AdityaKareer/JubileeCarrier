@@ -1,0 +1,113 @@
+.circle-image {
+  overflow-x: clip;
+}
+.circle-image .gradient-bg {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 40px 0 20px 0;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, rgb(236, 241, 253) 0%, rgba(236, 241, 253, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ecf1fd", endColorstr="#00ecf1fd",GradientType=0 );
+}
+.circle-image .gradient-bg .container {
+  max-width: 1000px;
+}
+.circle-image .gradient-bg .circle-image-text {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .circle-image .gradient-bg {
+    padding: 74px 0 40px 0;
+    margin: 100px auto;
+  }
+}
+.circle-image .container {
+  max-width: 1100px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .circle-image .container {
+    margin-top: 77px;
+  }
+}
+.circle-image-inner {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+@media (min-width: 768px) {
+  .circle-image-inner {
+    margin-top: 100px;
+    margin-bottom: 75px;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .circle-image-inner.reverse-order {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+}
+.circle-image .ch2 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+.circle-image-text {
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 20px;
+}
+.gradient-bg .circle-image-text {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .circle-image-text {
+    padding: 40px;
+    width: 50%;
+  }
+}
+.circle-image-text h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 768px) {
+  .circle-image-text h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+.circle-image-text p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.circle-image-img {
+  max-width: 400px;
+  position: relative;
+}
+.circle-image-img:before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #1081E8;
+  left: -90px;
+  top: -80px;
+}
+.reverse-order .circle-image-img:before {
+  right: -90px;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .circle-image-img {
+    max-width: none;
+    width: 50%;
+  }
+}
+.circle-image-img img {
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}

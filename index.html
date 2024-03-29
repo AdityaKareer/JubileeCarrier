@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+
+
+<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min751e.css?ver=6f23c9722ecf99af303df239aad62aeb' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='wp-includes/css/classic-themes.min751e.css?ver=6f23c9722ecf99af303df239aad62aeb' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='awsm-jobs-general-css' href='wp-content/plugins/wp-job-openings/assets/css/general.min6765.css?ver=3.3.3' media='all' />
+<link rel='stylesheet' id='awsm-jobs-style-css' href='wp-content/plugins/wp-job-openings/assets/css/style.min6765.css?ver=3.3.3' media='all' />
+<link rel='stylesheet' id='-style-css' href='wp-content/themes/jb/style8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='-css-css' href='wp-content/themes/jb/assets/css/app.min8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css' href='wp-content/uploads/pum/pum-site-styles7bc6.css?generated=1698917677&amp;ver=1.18.2' media='all' />
+<script src='wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4' id='jquery-core-js'></script>
+<script src='wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0' id='jquery-migrate-js'></script>
+
+
+
+
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-5 wp-custom-logo">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="page" class="site">
+	<header id="masthead" class="site-header">
+		<div class="site-header-top">
+			<div class="container">
+				<div class="site-header-top-inner">
+										<ul class="site-header-top-list">
+												<li>
+							<a href="mailto:contact@Jubilee Carrier.com">
+								<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.5785 10.7049C10.3896 10.8251 10.1771 10.8732 9.98819 10.8732C9.79929 10.8732 9.58678 10.8251 9.39787 10.7049L0 4.86359V12.628C0 14.2866 1.32231 15.6328 2.95159 15.6328H17.0484C18.6777 15.6328 20 14.2866 20 12.628V4.86359L10.5785 10.7049Z" fill="white"/>
+									<path d="M17.0484 0.632812H2.95163C1.55847 0.632812 0.377835 1.64242 0.0944824 2.98858L10.0118 9.1424L19.9056 2.98858C19.6222 1.64242 18.4416 0.632812 17.0484 0.632812Z" fill="white"/>
+								</svg>
+								<span>enquiry@jubileecarrier.com</span>
+							</a>
+						</li>
+						<li>
+							<a href="+91 723434839">
+								<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.8156 12.2371C15.7352 12.9357 15.4604 13.5977 15.0226 14.148C14.7933 14.4229 14.5048 14.6424 14.1786 14.7898C13.8523 14.9372 13.4969 15.0088 13.1391 14.9991C11.4948 15.001 9.86704 14.6708 8.35344 14.0283C6.12446 13.0874 4.22228 11.5104 2.88472 9.49431C1.54716 7.47824 0.833559 5.11262 0.833139 2.69319C0.823476 2.33533 0.895044 1.97994 1.04247 1.65372C1.18989 1.32749 1.40933 1.03893 1.6843 0.809697C2.23456 0.371873 2.89657 0.0971219 3.59514 0.0166468C3.82135 -0.0151576 4.05164 -0.00129395 4.2724 0.0574186C4.49316 0.116131 4.69991 0.218501 4.88043 0.358479C4.9041 0.374204 4.92491 0.393857 4.94196 0.41659L6.5725 2.48467C6.80786 2.79571 6.92975 3.1779 6.91793 3.56777C6.90612 3.95764 6.76131 4.33174 6.50755 4.62796L6.01531 5.14412L5.61878 5.55774C5.70766 6.76783 6.9656 8.26847 8.35344 9.23927C8.9368 9.67385 9.59657 9.99504 10.2985 10.1861L10.6916 9.81697L11.1941 9.3384C11.4888 9.08043 11.8632 8.93151 12.2546 8.91657C12.646 8.90164 13.0307 9.0216 13.3442 9.25636L15.4191 10.8972L15.4772 10.9553C15.6162 11.1356 15.7177 11.3419 15.7758 11.5621C15.8339 11.7822 15.8474 12.0117 15.8156 12.2371Z" fill="white"/>
+								</svg>
+								<span>+91 723434839</span>
+							</a>
+						</li>
+											</ul>
+
+				</div><!-- .site-header-top-inner -->
+			</div><!-- .container -->
+		</div><!-- .site-header-top -->
+
+		<div class="container menu-container">
+			<div class="site-branding">
+				<a href="index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="1310" height="284" src="/our-story/whitefont.png" class="custom-logo"  decoding="async"  /></a>
+			</div><!-- .site-branding -->
+
+
+            
+			<nav id="site-navigation" class="main-navigation">
+				<button class="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="menu-header-container"><ul id="primary-menu" class="menu"><li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-54"><a href="index.html" aria-current="page">Home</a></li>
+
+<li id="menu-item-888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-888"><a href="our-story/ourstory.html">About Us</a></li>
+
+<li id="menu-item-583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-583"><a href="/services/services.html">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-2648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2648"><a href="/air-freight/airindex.html">Air Freight</a>
+	<ul class="sub-menu">
+
+		<li id="menu-item-2259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2259"><a href="dangerous-goods-air-freight/dgair.html">Dangerous Goods</a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-2257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2257"><a href="sea-freight/seafreight.html">Sea Freight</a>
+	<ul class="sub-menu">
+	</ul>
+</li>
+	<li id="menu-item-2279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2279"><a href="dangerous-goods-air-freight/dgair.html">Dangerous Goods</a>
+
+</li>
+	<li id="menu-item-2292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2292"><a href="packaging/packaging.html">Packaging</a>
+
+</li>
+</ul>
+</li>
+
+</li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="/contact-us/contactus.html">Contact Us</a></li>
+</ul></div>			</nav>
+
+
+
+
+
+<!-- #site-navigation -->
+		</div>
+
+
+	</header><!-- #masthead -->
+
+
+    <main id="primary" class="site-main">
+            <section class="banner">
+                    <video playsinline loop autoplay muted poster="">
+                <source class="v-mp4" src="wp-content/uploads/2022/12/video1.mp4" type="video/mp4">
+            </video>
+            <p>&nbsp;</p>
+        <p>&nbsp;</p>
+                <div class="container">
+            <div class="banner-content">
+                <h1>Your global supply chain,simplified. <br>Connecting you to the world<br>with every shipment.</h1>
+                <p>Focus on Innovation and Growth: We Handle the Logistics, You Drive the Future.
+                </p>
+                <ul>
+<li>
+</ul>
+            </div><!-- .banner-content -->
+</div><!-- .container -->    </section><!-- .banner -->  
+        
+
+<style>
+    .wrap-stats-card {
+        margin-bottom: 0; /* Remove margin below the section */
+        padding-bottom: 5; /* Remove padding below the section */
+    }
+</style>
+
+
+<section class="wrap-stats-card">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <div class="stat-card-icon-wrap">
+              <img src="wp-content/uploads/2022/10/icon-star.svg" alt="Logistics and Freight Forwarding Company Icon star">
+            </div>
+            <h2 data-stat-value="20">0</h2>
+            <p>Years of experience<p style="color: white;">Your white text here</p>
+        </p>
+          </div><!-- .stat-card -->
+        </div><!-- .col -->
+
+
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <div class="stat-card-icon-wrap">
+              <img src="wp-content/uploads/2022/10/icon-clients.svg" alt="Logistics and Freight Forwarding Company Icon Clients">
+            </div>
+            <h2 data-stat-value="500">0</h2>
+            <p>Clients <p style="color: white;">Your white text here</p>
+        </p>
+          </div><!-- .stat-card -->
+        </div><!-- .col -->
+
+        <div class="col-6 col-md-3">
+            <div class="stat-card">
+              <div class="stat-card-icon-wrap">
+                <img src="wp-content/uploads/2022/10/icon-clients.svg" alt="Logistics and Freight Forwarding Company Icon Clients">
+              </div>
+              <h2 data-stat-value="200">0</h2>
+              <p>Shipments handled every day</p>
+            </div><!-- .stat-card -->
+          </div><!-- .col -->
+  
+        
+
+      </div><!-- .row -->
+    </div><!-- .container -->
+  </section><!-- .wrap-stats-card -->
+    
+  <style>
+    .home-icon-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+</style>
+
+    <section class="home-icon-text">
+        
+        <div class="container">
+                            <div class="row flex-row">
+                                            <div class="col col-12 col-lg-6 col-xl-3" data-aos="fade-zoom-in">
+                            <div class="home-icon-text-card card-text">
+                                <div class="home-icon-text-icon-wrap">
+                                    <img src="wp-content/uploads/2022/10/icon-ship-worldwide.svg" alt="Logistics and Freight Forwarding Company Icon Ship Worldwide">
+                                </div>
+                                <h2>No Borders</h2>
+                                <p> Expand your market reach and tap into a global customer base with our extensive network spanning virtually every corner of the world.</p>
+                            </div><!-- .card-text -->
+                        </div><!-- .col -->
+                                            <div class="col col-12 col-lg-6 col-xl-3" data-aos="fade-zoom-in">
+                            <div class="home-icon-text-card card-text">
+                                <div class="home-icon-text-icon-wrap">
+                                    <img src="wp-content/uploads/2022/10/noun-time-management-4050668.svg" alt="Logistics and Freight Forwarding Company Noun Time Management">
+                                </div>
+                                <h2>Ship anytime</h2>
+                                <p>Our 24/7 service ensures that your shipping needs are always met, regardless of the time or day. Enjoy the peace of mind knowing that your deliveries are always in motion.</p>
+                            </div><!-- .card-text -->
+                        </div><!-- .col -->
+                                            <div class="col col-12 col-lg-6 col-xl-3" data-aos="fade-zoom-in">
+                            <div class="home-icon-text-card card-text">
+                                <div class="home-icon-text-icon-wrap">
+                                    <img src="wp-content/uploads/2022/10/noun-shipment-2609193-1.svg" alt="Logistics and Freight Forwarding Company Noun Shipment">
+                                </div>
+                                <h2>No limitations</h2>
+                                <p> No matter the size or weight of your shipment, from small, personalized packages to large-scale business orders, we handle it all with unwavering efficiency and dedicated care.</p>
+                            </div><!-- .card-text -->
+                        </div><!-- .col -->
+                                            <div class="col col-12 col-lg-6 col-xl-3" data-aos="fade-zoom-in">
+                            <div class="home-icon-text-card card-text">
+                                <div class="home-icon-text-icon-wrap">
+                                    <img src="wp-content/uploads/2022/10/icon-ship-budget.svg" alt="Logistics and Freight Forwarding Company Icon Ship Budget">
+                                </div>
+                                <h2>Unlock cost-effective solutions</h2>
+                                <p> Our extensive network of carriers allows us to negotiate competitive pricing, ensuring that you can ship anything, anywhere, without exceeding your budget.
+                                </p>
+                            </div><!-- .card-text -->
+                        </div><!-- .col -->
+                                    </div><!-- .row -->
+                    </div><!-- .container -->
+    </section>
+    <!-- .home-icon-text -->
+<p>&nbsp;</p>
+    <style>
+        .home-map {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    </style>
+    <section class="home-map">
+            <div class="container">
+            <div class="home-map-text">
+                <h2 class="ch2">BEYOND BOUNDARIES </h2>
+                <p>Superior solutions, worldwide.</p>
+            </div>
+    </section>
+
+    <section class="banner">
+        <video playsinline loop autoplay muted poster="wp-content/uploads/2022/10/banner-home.jpg" >
+            <source class="v-mp4" src="wp-content/uploads/2022/12/worldmap.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <p>&nbsp;</p>
+
+    <p>&nbsp;&nbsp;</p>
+    <section class="home-hiw">
+                <div class="container">
+            <h2 class="ch2">How it works</h2>
+            <p>Jubliee Carrier delivers a seamless shipping experience. </p>
+
+            <p>&nbsp;</p>
+
+                            <div class="row" data-aos="fade-up">
+                                            <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="step-card" data-aos-delay="200">
+                                <div class="step-card-top">
+                                    <div class="step-card-img-wrap">
+                                        <img src="wp-content/uploads/2022/10/order-placement.svg" alt="Logistics and Freight Forwarding Company Order Placement"/>
+                                    </div>
+                                    <div class="step">1</div>
+                                </div><!-- .step-card-top -->
+                                <div class="step-card-content">
+                                    <h2>Get a Quote</h2>
+                                    <p>Provide details like origin, destination, weight, and dimensions for an instant quote.</p>
+                                </div><!-- .step-card-content -->
+                            </div><!-- .step-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="step-card" data-aos-delay="400">
+                                <div class="step-card-top">
+                                    <div class="step-card-img-wrap">
+                                        <img src="wp-content/uploads/2022/10/transportation.svg" alt="Logistics and Freight Forwarding Company Transportation"/>
+                                    </div>
+                                    <div class="step">2</div>
+                                </div><!-- .step-card-top -->
+                                <div class="step-card-content">
+                                    <h2>Book Your Shipment</h2>
+                                    <p>Choose your preferred shipping method (air, sea, express) based on your budget and needs</p>
+                                </div><!-- .step-card-content -->
+                            </div><!-- .step-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="step-card" data-aos-delay="600">
+                                <div class="step-card-top">
+                                    <div class="step-card-img-wrap">
+                                        <img src="wp-content/uploads/2022/10/tracking.svg" alt="Logistics and Freight Forwarding Company Tracking"/>
+                                    </div>
+                                    <div class="step">3</div>
+                                </div><!-- .step-card-top -->
+                                <div class="step-card-content">
+                                    <h2>Prepare Your Shipment:</h2>
+                                    <p>Pack your items securely using our provided guidelines. Packing services are available: high-in demand for Dangerous</p>
+                                </div><!-- .step-card-content -->
+                            </div><!-- .step-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="step-card" data-aos-delay="800">
+                                <div class="step-card-top">
+                                    <div class="step-card-img-wrap">
+                                        <img src="wp-content/uploads/2022/10/customs-clearance.svg" alt="Logistics and Freight Forwarding Company Customs Clearance"/>
+                                    </div>
+                                    <div class="step">4</div>
+                                </div><!-- .step-card-top -->
+                                <div class="step-card-content">
+                                    <h2>We Take Over</h2>
+                                    <p>We handle pickup, warehousing, customs, and delivery – track it all online!</p>
+                                </div><!-- .step-card-content -->
+                            </div><!-- .step-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="step-card" data-aos-delay="1000">
+                                <div class="step-card-top">
+                                    <div class="step-card-img-wrap">
+                                        <img src="wp-content/uploads/2022/10/warehousing.svg" alt="Logistics and Freight Forwarding Company Warehousing"/>
+                                    </div>
+                                    <div class="step">5</div>
+                                </div><!-- .step-card-top -->
+                                <div class="step-card-content">
+                                    <h2>Relax</h2>
+                                    <p> Your valuable items are in good hands. We'll keep you updated and assist you every step of the way.</p>
+                                </div><!-- .step-card-content -->
+                            </div><!-- .step-card -->
+                        </div><!-- .col -->
+                                    </div><!-- .row -->
+                        
+        </div><!-- .container -->
+    </section>
+    <section class="home-trust">
+
+
+
+
+        <div class="container">
+            <div class="image-container"  data-aos-delay="0">
+              <img class="img-airplane" src="wp-content/uploads/2022/11/output_image (1).png" alt="Logistics and Freight Forwarding Company Airplane">
+            </div>
+          </div>
+
+
+
+
+          
+        <div class="container">
+
+
+
+            <h2 class="ch2">100+ companies trust <br>Jubliee Carrier  for their business</h2>
+            <p>We offer complete and customised logistics solutions to 100+ reputed businesses to make their goods transportation and supply chain management easier and stress-free.</p>
+                            <div class="row company-logos">
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/allcargo.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/apicore.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/Atlas Logistics.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/axalta.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/BDP UGL.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/BuildingArtboard-1-1-1.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/BuildingArtboard-1-1.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/cardila-logo.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/dhl.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/EAS_2.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/Eskay Iodine.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/eternis.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/exide.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/grasim.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/huber_group.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/Lanxess.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/logo-4.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/magnum.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/McLube Asia.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/Namau1.jpg" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/nico.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/Nippon Paint.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/Olympic-Logo.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/PAR Formulations.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/pdp.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/shivtech.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/skylink.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/SRF_Limited.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="/02/tata_motors_logo.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="wp-content/uploads/2023/02/BuildingArtboard-1-1-1.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="wp-content/uploads/2022/11/shanti-shipping.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="wp-content/uploads/2022/11/total-movements.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="wp-content/uploads/2022/11/TSI-CARGO.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="wp-content/uploads/2023/02/logo-4.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="wp-content/uploads/2023/02/world-cargo-logo-1.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                            <div class="col col-4 col-xl-2">
+                            <div class="company-card">
+                                <img src="wp-content/uploads/2023/02/Olympic-Logo.png" />
+                            </div><!-- .company-card -->
+                        </div><!-- .col -->
+                                    </div><!-- .row -->
+                                             </div>
+    </section>
+
+
+    <style>
+        .footer {
+            background-color: #333; /* Fallback color if the image is not available */
+            background-image: url('/our-story/footerform.jpg'); /* Specify your background image */
+            background-size: cover;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            align-items: left;
+            justify-content: left; /* Center horizontally */
+        }
+        .form-container {
+            text-align: left;
+            max-width: 500px; /* Set max-width */
+            width: 100%; /* Take full width */
+        }
+        .footer form {
+            margin: 0 auto; /* Center the form horizontally */
+        }
+        .footer input[type="text"],
+        .footer input[type="email"],
+        .footer textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        .footer textarea {
+            height: 150px;
+        }
+        .footer input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+            .footer {
+                padding: 30px 10px;
+            }
+            .form-container {
+                padding-right: 20px; /* Add spacing between form and background image on smaller screens */
+            }
+        }
+    </style>
+    </head>
+    <body>
+    
+    <div class="footer">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name*" required><br>
+                <input type="email" name="email" placeholder="Your Email*" required><br>
+                <input type="text" name="company" placeholder="Company Name"><br>
+                <input type="text" name="phone" placeholder="Phone Number*" required><br>
+                <input type="text" name="designation" placeholder="Designation"><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    
+    
+	<footer id="colophon" class="site-footer">
+		<div class="decor"></div>
+		<div class="site-footer-inner">
+			<div class="container">
+				<div class="site-footer-top">
+					<div class="site-info">
+												<img src="/our-story/Jublee carrier Final.png" alt="JublieecarrierLogo" />
+						<p>Worldwide Transportation<br>Efficient handling of your free hand and nomination shipments</p>
+					</div><!-- .site-info -->
+					<nav>
+					<div class="menu-footer-container"><ul id="footer-menu" class="menu"><li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-67"><a href="#">Quick Links</a>
+<ul class="sub-menu">
+	<li id="menu-item-1233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-1233"><a href="index.html" aria-current="page">Home</a></li>
+	<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="/our-story/ourstory.html">About Us</a></li>
+	<li id="menu-item-582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-582"><a href="/services/services.html">Services</a></li>
+	<li id="menu-item-1234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="/contact-us/contactus.html">Contact Us</a></li>
+</ul>
+</li>
+
+
+</ul></div>					</nav>
+				</div><!-- .site-footer-top -->
+
+
+				<div class="site-footer-bottom">
+					<div class="wrap-copyright">© Jubilee Carrier LLP 2022, All Rights Reserved</div>
+					<div><ul>
+
+</ul>
+</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- #colophon -->
+
+
+    
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<g id="arrow-right">
+			<path d="M9.129 6.75L1.46293e-06 6.75L1.3318e-06 5.25L9.129 5.25L5.106 1.227L6.1665 0.166497L12 6L6.1665 11.8335L5.106 10.773L9.129 6.75Z" fill="white"/>
+		</g>
+		<g id="icon-scroll-down">
+			<g class="scroll-down-svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M64.5 8L56.2377 13.5L56.2377 2.5L64.5 8Z" stroke="white" stroke-width="2"/>
+				<path d="M1.5 8L56.2377 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+			<defs>
+				<rect width="15" height="66" fill="white" transform="translate(0.5 15.5) rotate(-90)"/>
+			</defs>
+		</g>
+		<use xlink:href="#arrow-right">
+		<g id="icon-close">
+			<path d="M5.00005 3.93949L8.71255 0.22699L9.77305 1.28749L6.06055 4.99999L9.77305 8.71249L8.71255 9.77299L5.00005 6.06049L1.28755 9.77299L0.227051 8.71249L3.93955 4.99999L0.227051 1.28749L1.28755 0.22699L5.00005 3.93949Z" fill="#182E3A"/>
+		</g>
+		<g id="icon-chevron-left">
+			<path d="M2.82783 7L7.77783 11.95L6.36383 13.364L-0.000168403 7L6.36383 0.635998L7.77783 2.05L2.82783 7Z" fill="white"/>
+		</g>
+		<g id="icon-chevron-right">
+			<path d="M5.17217 7L0.222168 2.05L1.63617 0.636002L8.00017 7L1.63617 13.364L0.222168 11.95L5.17217 7Z" fill="white"/>
+		</g>
+		<!-- <g id="icon-close">
+		</g>
+		<g id="icon-close">
+		</g> -->
+
+    </svg>
+</div><!-- #page -->
+
+
+</div>
+
+
+<script src='wp-content/themes/jb/js/navigation8a54.js?ver=1.0.0' id=''></script>
+<script src='wp-content/themes/jb/assets/js/app.min8a54.js?ver=1.0.0' id='-js-js'></script>
+<script src='wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+
+<script src='wp-content/uploads/pum/pum-site-scriptscd48.js?defer&amp;generated=1698917677&amp;ver=1.18.2' id='popup-maker-site-js'></script>
+<script src='wp-includes/js/dist/vendor/wp-polyfill-inert.min0226.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script src='wp-includes/js/dist/vendor/regenerator-runtime.min8fa4.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script src='wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='wp-includes/js/dist/dom-ready.minded6.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js'></script>
+<script src='wp-includes/js/dist/hooks.min6c65.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+<script src='wp-includes/js/dist/i18n.mine57b.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>
+
+<script src='wp-includes/js/dist/a11y.min65c7.js?ver=ecce20f002eda4c19664' id='wp-a11y-js'></script>
+
+
+<script>
+    const statsCards = document.querySelectorAll('.stat-card');
+
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+
+    const handleScroll = () => {
+      statsCards.forEach(card => {
+        if (isInViewport(card) && !card.classList.contains('animated')) {
+          const statValueElement = card.querySelector('h2');
+          const statFinalValue = parseInt(statValueElement.getAttribute('data-stat-value'));
+
+          let currentValue = 0;
+          const increment = Math.ceil(statFinalValue / 200); // Adjust the speed of the animation
+
+          const updateValue = () => {
+            statValueElement.textContent = currentValue;
+            currentValue += increment;
+
+            if (currentValue <= statFinalValue) {
+              requestAnimationFrame(updateValue);
+            } else {
+              statValueElement.textContent = statFinalValue;
+              card.classList.add('animated'); // Mark as animated to avoid repeated animations
+            }
+          };
+
+          updateValue();
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Trigger initial check
+
+  </script>
+</body>
+
+</html>

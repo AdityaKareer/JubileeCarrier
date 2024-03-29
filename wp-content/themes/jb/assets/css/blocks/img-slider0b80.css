@@ -1,0 +1,30 @@
+.img-slider {
+  margin: 50px 0;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .img-slider {
+    margin: 100px 0;
+  }
+}
+.img-slider .container {
+  max-width: 900px;
+}
+.img-slider-item {
+  width: 130px;
+  height: 130px;
+  border-radius: 30px;
+  border: 1px solid #CFD8E7;
+  padding: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto;
+}
+.img-slider-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
