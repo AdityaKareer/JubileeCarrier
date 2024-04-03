@@ -596,21 +596,33 @@
     </head>
     <body>
     
-    <div class="footer">
-        <div class="form-container">
-            <h2>Get a Quote</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name*" required><br>
-                <input type="email" name="email" placeholder="Your Email*" required><br>
-                <input type="text" name="company" placeholder="Company Name"><br>
-                <input type="text" name="phone" placeholder="Phone Number*" required><br>
-                <input type="text" name="designation" placeholder="Designation"><br>
-                <textarea name="message" placeholder="Your Message" required></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
+        <div class="footer">
+            <div class="form-container">
+                <h2>Get a Quote</h2>
+                <form id="quoteForm" action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name*" required><br>
+                    <input type="email" name="email" placeholder="Your Email*" required><br>
+                    <input type="text" name="company" placeholder="Company Name"><br>
+                    <input type="text" name="phone" placeholder="Phone Number*" required><br>
+                    <input type="text" name="designation" placeholder="Designation"><br>
+                    <textarea name="message" placeholder="Your Message" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
-    </div>
-    
+        <script>
+            document.getElementById('quoteForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+        
+                // Display an alert
+                alert('Received!');
+        
+                // You can add more custom logic here if needed
+        
+                // Optional: If you want to submit the form after showing the alert
+                // event.target.submit(); // Uncomment this line to submit the form
+            });
+        </script>
     
 	<footer id="colophon" class="site-footer">
 		<div class="decor"></div>

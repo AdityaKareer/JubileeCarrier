@@ -51,11 +51,10 @@
 
 
 
-		<div class="container menu-container">
-			<div class="site-branding">
-				<a href="/index.html" class="custom-logo-link" rel="home"><img width="1310" height="284" src="/services/whitefont.png" class="custom-logo" alt="JublieecarrierLogo" decoding="async"  /></a>								<a href="../index.html" class="custom-logo-link sticky" rel="home" aria-current="page"><img src="../wp-content/uploads/2023/05/whitefont.png" alt="JublieecarrierLogo Logo" /></a>
-						
-			</div><!-- .site-branding -->
+    <div class="container menu-container">
+      <div class="site-branding">
+        <a href="index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="1310" height="284" src="/services/whitefont.png" class="custom-logo"  decoding="async"  /></a>
+      </div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation">
 				<button class="nav-toggle">
 					<span></span>
@@ -378,10 +377,10 @@
 </head>
 <body>
 
-<div class="footer">
+  <div class="footer">
     <div class="form-container">
         <h2>Get a Quote</h2>
-        <form action="#" method="post">
+        <form id="quoteForm" action="#" method="post">
             <input type="text" name="name" placeholder="Your Name*" required><br>
             <input type="email" name="email" placeholder="Your Email*" required><br>
             <input type="text" name="company" placeholder="Company Name"><br>
@@ -392,6 +391,19 @@
         </form>
     </div>
 </div>
+<script>
+    document.getElementById('quoteForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Display an alert
+        alert('Received!');
+
+        // You can add more custom logic here if needed
+
+        // Optional: If you want to submit the form after showing the alert
+        // event.target.submit(); // Uncomment this line to submit the form
+    });
+</script>
 </div>
         </main><!-- #main -->
 
