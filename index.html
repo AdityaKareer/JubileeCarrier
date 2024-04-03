@@ -659,7 +659,7 @@
 
 <script>
     const statsCards = document.querySelectorAll('.stat-card');
-  
+    
     const isInViewport = (element) => {
       const rect = element.getBoundingClientRect();
       return (
@@ -669,31 +669,24 @@
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
       );
     };
-  
+    
     const handleScroll = () => {
       statsCards.forEach(card => {
         if (isInViewport(card) && !card.classList.contains('animated')) {
           const statValueElement = card.querySelector('h2');
           const statFinalValue = parseInt(statValueElement.getAttribute('data-stat-value'));
+          const duration = 3000; // 3 seconds
   
-          let currentValue = 0;
-          let increment;
-  
-          if (statFinalValue === 500) {
-            // Adjust the increment value for the 500 stat card to make it move faster
-            increment = Math.ceil(statFinalValue / 100); // Example: 500 / 100 = 5
-          } else if (statFinalValue === 200) {
-            // Adjust the increment value for the 200 stat card to make it move faster
-            increment = Math.ceil(statFinalValue / 50); // Example: 200 / 50 = 4
-          } else {
-            increment = Math.ceil(statFinalValue / 300); // Default increment for other cards
-          }
+          let currentTime = 0;
+          const increment = Math.ceil(statFinalValue / (duration / 1000)); // Calculate increment based on duration
   
           const updateValue = () => {
-            statValueElement.textContent = currentValue;
-            currentValue += increment;
+            const progress = currentTime / duration;
+            const animatedValue = Math.floor(progress * statFinalValue);
+            statValueElement.textContent = animatedValue;
   
-            if (currentValue <= statFinalValue) {
+            if (currentTime < duration) {
+              currentTime += 16; // Using 16ms per frame for requestAnimationFrame
               requestAnimationFrame(updateValue);
             } else {
               statValueElement.textContent = statFinalValue + "+";
@@ -705,11 +698,14 @@
         }
       });
     };
-  
+    
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Trigger initial check
-  
+    
   </script>
+  
+  
+  
   
 </body>
 
