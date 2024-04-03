@@ -24,7 +24,7 @@
 				<div class="site-header-top-inner">
 										<ul class="site-header-top-list">
 												<li>
-							<a href="mailto:contact@Jubilee Carrier.com">
+							<a href="mailto:contact@JubileeCarrier.com">
 								<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M10.5785 10.7049C10.3896 10.8251 10.1771 10.8732 9.98819 10.8732C9.79929 10.8732 9.58678 10.8251 9.39787 10.7049L0 4.86359V12.628C0 14.2866 1.32231 15.6328 2.95159 15.6328H17.0484C18.6777 15.6328 20 14.2866 20 12.628V4.86359L10.5785 10.7049Z" fill="white"/>
 									<path d="M17.0484 0.632812H2.95163C1.55847 0.632812 0.377835 1.64242 0.0944824 2.98858L10.0118 9.1424L19.9056 2.98858C19.6222 1.64242 18.4416 0.632812 17.0484 0.632812Z" fill="white"/>
@@ -348,7 +348,7 @@
 
 
 
-            <h2 class="ch2">100+ companies trust <br>Jubliee Carrier  for their business</h2>
+            <h2 class="ch2">100+ companies trust <br>Jubliee Carrier LLP for their business</h2>
             <p>We offer complete and customised logistics solutions to 100+ reputed businesses to make their goods transportation and supply chain management easier and stress-free.</p>
                             <div class="row company-logos">
                                             <div class="col col-4 col-xl-2">
@@ -388,7 +388,8 @@
                         </div><!-- .col -->
                                             <div class="col col-4 col-xl-2">
                             <div class="company-card">
-                                <img src="wp-content/uploads/2023/05/grasim.png" />
+                                <img id="zoomableImage" src="wp-content/uploads/2023/05/grasim.png" alt="Zoomable Image" style="transform: scale(2);">
+
                             </div><!-- .company-card -->
                         </div><!-- .col -->
                                             <div class="col col-4 col-xl-2">
@@ -448,7 +449,8 @@
                         </div><!-- .col -->
                                             <div class="col col-4 col-xl-2">
                             <div class="company-card">
-                                <img src="wp-content/uploads/2023/05/priority-freight_owler_20180629_101434_original.png" />
+                                <img id="zoomableImage" src="wp-content/uploads/2023/05/Hindalco_Logo..png" alt="Zoomable Image" style="transform: scale(2);">
+
                             </div><!-- .company-card -->
                         </div><!-- .col -->
                                             <div class="col col-4 col-xl-2">
@@ -657,7 +659,7 @@
 
 <script>
     const statsCards = document.querySelectorAll('.stat-card');
-
+  
     const isInViewport = (element) => {
       const rect = element.getBoundingClientRect();
       return (
@@ -667,37 +669,48 @@
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
       );
     };
-
+  
     const handleScroll = () => {
       statsCards.forEach(card => {
         if (isInViewport(card) && !card.classList.contains('animated')) {
           const statValueElement = card.querySelector('h2');
           const statFinalValue = parseInt(statValueElement.getAttribute('data-stat-value'));
-
+  
           let currentValue = 0;
-          const increment = Math.ceil(statFinalValue / 200); // Adjust the speed of the animation
-
+          let increment;
+  
+          if (statFinalValue === 500) {
+            // Adjust the increment value for the 500 stat card to make it move faster
+            increment = Math.ceil(statFinalValue / 100); // Example: 500 / 100 = 5
+          } else if (statFinalValue === 200) {
+            // Adjust the increment value for the 200 stat card to make it move faster
+            increment = Math.ceil(statFinalValue / 50); // Example: 200 / 50 = 4
+          } else {
+            increment = Math.ceil(statFinalValue / 300); // Default increment for other cards
+          }
+  
           const updateValue = () => {
             statValueElement.textContent = currentValue;
             currentValue += increment;
-
+  
             if (currentValue <= statFinalValue) {
               requestAnimationFrame(updateValue);
             } else {
-              statValueElement.textContent = statFinalValue;
+              statValueElement.textContent = statFinalValue + "+";
               card.classList.add('animated'); // Mark as animated to avoid repeated animations
             }
           };
-
+  
           updateValue();
         }
       });
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Trigger initial check
-
+  
   </script>
+  
 </body>
 
 </html>
